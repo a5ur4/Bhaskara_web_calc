@@ -330,4 +330,12 @@ main {
     color: var(--h2color);
 }
 
+footer {
+    text-align: center;
+    color: var(--h2color);
+    height: 40px;
+    margin-top: 28em;
+    text-shadow: 1px 1px 15px var(--h2color);
+}
+
 /*https://www.schemecolor.com/purple-and-gold.php#:~:text=The%20Purple%20And%20Gold%20Color%20Scheme%20palette%20has,and%20CMYK%20codes%20are%20in%20the%20table%20below.*/
