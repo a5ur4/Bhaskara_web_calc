@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -25,7 +26,7 @@ body {
     background-color: var(--h2color);
 }
 
-header{
+header {
     display: flex;
     background-color: #4116535f;
     border-radius: 10px;
@@ -41,7 +42,7 @@ header img {
     margin-right: -30px;
 }
 
-header h2{
+header h2 {
     color: var(--h2color);
     cursor: pointer;
 }
@@ -182,11 +183,11 @@ main {
     text-align: center;
     border-radius: 20px;
     margin-left: -25px;
-    box-shadow: 0px 0px 34px  var(--h2color);
+    box-shadow: 0px 0px 34px var(--h2color);
     color: var(--h2color);
 }
 
-#section_1 h2{
+#section_1 h2 {
     color: var(--h2color);
     font-weight: bold;
     font-size: x-large;
@@ -220,7 +221,7 @@ main {
 #section_1 input:focus {
     height: 25px;
     width: 250px;
-    box-shadow: 0px 0px 34px  var(--h2color);
+    box-shadow: 0px 0px 34px var(--h2color);
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -243,7 +244,7 @@ main {
     width: 160px;
     background-color: var(--h2color);
     color: var(--darkpurple);
-    box-shadow: 0px 0px 34px  var(--h2color);
+    box-shadow: 0px 0px 34px var(--h2color);
 }
 
 #section_2 {
@@ -254,11 +255,11 @@ main {
     border-radius: 20px;
     margin-left: 230px;
     margin-right: -50px;
-    box-shadow: 0px 0px 34px  var(--h2color);
+    box-shadow: 0px 0px 34px var(--h2color);
     color: var(--h2color);
 }
 
-#section_2 h2{
+#section_2 h2 {
     color: var(--h2color);
     font-weight: bold;
     font-size: x-large;
@@ -292,7 +293,7 @@ main {
 #section_2 input:focus {
     height: 25px;
     width: 250px;
-    box-shadow: 0px 0px 34px  var(--h2color);
+    box-shadow: 0px 0px 34px var(--h2color);
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -315,7 +316,7 @@ main {
     width: 160px;
     background-color: var(--h2color);
     color: var(--darkpurple);
-    box-shadow: 0px 0px 34px  var(--h2color);
+    box-shadow: 0px 0px 34px var(--h2color);
 }
 
 .result {
@@ -323,9 +324,9 @@ main {
     width: 600px;
     height: 300px;
     text-align: center;
-    border-radius: 20px; 
+    border-radius: 20px;
     margin-right: -25px;
-    box-shadow: 0px 0px 34px  var(--h2color);
+    box-shadow: 0px 0px 34px var(--h2color);
     color: var(--h2color);
 }
 
