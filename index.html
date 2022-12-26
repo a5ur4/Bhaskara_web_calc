@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.20b410ec3d145d10f470b8adb25aba45?rik=BfUtYRsb73hIJA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_127435.png&ehk=6%2bk8knqFJlOQlXz9cC3nTENF1d8zUfJGo0FELjYUgUc%3d&risl=&pid=ImgRaw&r=0" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="https://th.bing.com/th/id/R.20b410ec3d145d10f470b8adb25aba45?rik=BfUtYRsb73hIJA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_127435.png&ehk=6%2bk8knqFJlOQlXz9cC3nTENF1d8zUfJGo0FELjYUgUc%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <h2 onClick="back()">Bhaskara </h2>
+        <div>
+            <ul>
+                <li>
+                    <a href=""><p>Voltagem</p></a>
+                </li>
+                <li>
+                    <a href=""><p>Massa planetária</p></a>
+                </li>
+                <li>
+                    <a href=""><p>Diagonais internas</p></a>
+                </li>
+                <li>
+                    <a href=""><p>Área e perímetro</p></a>
+                </li>
+                <li>
+                    <a href=""><p>Volume</p></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="search">
+        <div class="loader">
+            <span></span>
+        </div>
+    </section>
+    <br>
+    <div id="quote">
+        <h2>"Algo só é impossível até que alguém duvide<br> e acabe provando o contrário."</h2>
+        <h3>- Albert Einsten</h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section id="section_1">
+            <br>
+            <h2>Bhaskara</h2>
+            <hr class="linha">
+            <hr id="linha_middle">
+            <br> 
+            <br>
+            <div>
+                <form>
+                    <label for="text">Digite o termo "a" da operação: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="term_a" id="term_a">
+                    <br>
+                    <br>
+                    <label for="text">Digite o termo "b" da operação: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="term_b" id="term_b">
+                    <br>
+                    <br>
+                    <label for="text">Digite o delta "Δ" da operação: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="delt" id="delt">
+                    <br>
+                    <br>
+                    <br>
+                    <button type="button" onClick="bhaskara()">Calcular</button>
+                    <br>
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="result">
+                <h2>Resultado:</h2>
+                <hr class="linha">
+                <hr id="linha_middle">
+                <br>
+                <br>
+                <h1 id="valor_f">X¹ = ?</h1>
+                <h1 id="valor_f2">X² = ?</h1>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section id="section_2">
+            <br>
+            <h2>Delta</h2>
+            <hr class="linha">
+            <hr id="linha_middle">
+            <br>
+            <br>
+            <div>
+                <form>
+                    <label for="text">Digite o termo "a" de Delta: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="delt_term_a" id="delt_term_a">
+                    <br>
+                    <br>
+                    <label for="text">Digite o termo "b" de Delta: </label>
+                    <br>
+                    <br>              
+                    <input type="text" name="delt_term_b" id="delt_term_b">
+                    <br>
+                    <br>
+                    <label for="text">Digite o termo "c" de Delta: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="delt_term_c" id="delt_term_c">
+                    <br>
+                    <br>
+                    <br>
+                    <button type="button" onClick="delta()">Calcular</button>
+                    <br>
+                    <br>
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="result">
+                <h2>Resultado:</h2>
+                <hr class="linha">
+                <hr id="linha_middle">
+                <br>
+                <br>
+                <h1 id="valor_delt">Δ = ?</h1>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

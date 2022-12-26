@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgcolor);
+    font-family: var(--fontchivomono);
+    overflow-x: hidden;
+}
+
+:root {
+    --darkpurple: #441C55;
+    --bgcolor: #1b0424;
+    --h2color: #DC9200;
+    --fontchivomono: 'Chivo Mono', monospace;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--darkpurple);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height: 10px;
+    background-color: var(--h2color);
+}
+
+header{
+    display: flex;
+    background-color: #4116535f;
+    border-radius: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+header img {
+    margin-left: 25px;
+    height: 40px;
+    width: 40px;
+    padding: 40px;
+    margin-right: -30px;
+}
+
+header h2{
+    color: var(--h2color);
+    cursor: pointer;
+}
+
+header div {
+    margin-left: 200px;
+}
+
+header a {
+    text-decoration: none;
+    color: #F5F5F5;
+    transition: 0.5s ease-in-out;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    color: var(--h2color);
+    text-decoration: underline;
+}
+
+header ul li a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: var(--h2color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header li a:hover::after {
+    width: 100%;
+}
+
+header h2 {
+    padding: 25px;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.55);
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    background: transparent;
+    border: 1px dashed#444;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 25px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 35px rgba(0, 0, 0, 0.25);
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px dashed#444;
+    box-shadow: inset -5px -5px 25px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 35px rgba(0, 0, 0, 0.25);
+}
+
+.loader span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    transform-origin: top left;
+    animation: radar81 2s linear infinite;
+    border-top: 1px dashed #fff;
+}
+
+.loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--h2color);
+    transform-origin: top left;
+    transform: rotate(-55deg);
+    filter: blur(30px) drop-shadow(20px 20px 20px var(--h2color));
+}
+
+@keyframes radar81 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#quote {
+    text-align: center;
+    color: var(--h2color);
+    text-shadow: 1px 1px 15px var(--h2color);
+}
+
+main {
+    display: flex;
+}
+
+#section_1 {
+    border: 2px solid var(--h2color);
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: -25px;
+    box-shadow: 0px 0px 34px  var(--h2color);
+    color: var(--h2color);
+}
+
+#section_1 h2{
+    color: var(--h2color);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.linha {
+    border: 1px solid var(--h2color);
+    width: 100px;
+}
+
+#linha_middle {
+    border: 1px solid var(--h2color);
+    width: 200px;
+}
+
+#section_1 label {
+    font-weight: bold;
+}
+
+#section_1 input {
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    background-color: var(--darkpurple);
+    border: var(--h2color) 1px solid;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    color: var(--h2color);
+}
+
+#section_1 input:focus {
+    height: 25px;
+    width: 250px;
+    box-shadow: 0px 0px 34px  var(--h2color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section_1 button {
+    background-color: var(--darkpurple);
+    color: var(--h2color);
+    border: var(--h2color) 1px solid;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#section_1 button:hover {
+    height: 55px;
+    width: 160px;
+    background-color: var(--h2color);
+    color: var(--darkpurple);
+    box-shadow: 0px 0px 34px  var(--h2color);
+}
+
+#section_2 {
+    border: 2px solid var(--h2color);
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 230px;
+    margin-right: -50px;
+    box-shadow: 0px 0px 34px  var(--h2color);
+    color: var(--h2color);
+}
+
+#section_2 h2{
+    color: var(--h2color);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.linha {
+    border: 1px solid var(--h2color);
+    width: 100px;
+}
+
+#linha_middle {
+    border: 1px solid var(--h2color);
+    width: 200px;
+}
+
+#section_2 label {
+    font-weight: bold;
+}
+
+#section_2 input {
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    background-color: var(--darkpurple);
+    border: var(--h2color) 1px solid;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    color: var(--h2color);
+}
+
+#section_2 input:focus {
+    height: 25px;
+    width: 250px;
+    box-shadow: 0px 0px 34px  var(--h2color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section_2 button {
+    background-color: var(--darkpurple);
+    color: var(--h2color);
+    border: var(--h2color) 1px solid;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#section_2 button:hover {
+    height: 55px;
+    width: 160px;
+    background-color: var(--h2color);
+    color: var(--darkpurple);
+    box-shadow: 0px 0px 34px  var(--h2color);
+}
+
+.result {
+    border: 2px solid var(--h2color);
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    border-radius: 20px; 
+    margin-right: -25px;
+    box-shadow: 0px 0px 34px  var(--h2color);
+    color: var(--h2color);
+}
+
+/*https://www.schemecolor.com/purple-and-gold.php#:~:text=The%20Purple%20And%20Gold%20Color%20Scheme%20palette%20has,and%20CMYK%20codes%20are%20in%20the%20table%20below.*/
