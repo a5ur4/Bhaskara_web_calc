@@ -47,44 +47,6 @@ header h2 {
     cursor: pointer;
 }
 
-header div {
-    margin-left: 200px;
-}
-
-header a {
-    text-decoration: none;
-    color: #F5F5F5;
-    transition: 0.5s ease-in-out;
-}
-
-header ul li {
-    list-style: none;
-    display: inline-flex;
-    padding: 20px;
-    font-size: small;
-    font-weight: bold;
-}
-
-header ul li a:hover {
-    color: var(--h2color);
-    text-decoration: underline;
-}
-
-header ul li a::after {
-    content: " ";
-    width: 0%;
-    height: 3px;
-    background-color: var(--h2color);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
-}
-
-header li a:hover::after {
-    width: 100%;
-}
-
 header h2 {
     padding: 25px;
 }
